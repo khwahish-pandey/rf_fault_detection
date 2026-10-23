@@ -2,8 +2,18 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+.ipynb_checkpoints/
+
+# Ignore generated datasets by default
 data/raw/*
 data/processed/*
+
+# Ignore generated models and results by default
 models/*
-results/
-.ipynb_checkpoints/
+results/*
+
+# Keep folder placeholders in Git
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+!results/.gitkeep
